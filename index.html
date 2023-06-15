@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телефонный справочник</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Телефонный справочник</div>
+        <a href="admin.html" class="admin-link">Администратор</a>
+    </header>
+
+    <main>
+        <h1>Поиск абонента</h1>
+        <form id="search-form">
+            <div class="search-group">
+                <label for="phone-number">Номер телефона:</label>
+                <input type="text" id="phone-number" placeholder="Введите номер телефона">
+            </div>
+
+            <div class="search-group">
+                <label for="full-name">ФИО:</label>
+                <input type="text" id="full-name" placeholder="Введите ФИО">
+            </div>
+
+            <div class="search-group">
+                <label for="organization">Название организации:</label>
+                <input type="text" id="organization" placeholder="Введите название организации">
+            </div>
+
+            <div class="search-group">
+                <label for="address">Адрес:</label>
+                <input type="text" id="address" placeholder="Введите адрес">
+            </div>
+
+            <button type="submit">Найти</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2023 Телефонный справочник
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

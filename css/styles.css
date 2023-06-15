@@ -1,0 +1,129 @@
+/* styles.css */
+
+/* Стилизация основного содержимого страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Стилизация верхней части страницы с логотипом и ссылкой на администратора */
+header {
+    background-color: #4caf50;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.admin-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.admin-link:hover {
+    color: #fff;
+}
+
+/* Стилизация основного содержимого страницы */
+main {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slide-up 0.5s ease-in-out;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+/* Стилизация формы поиска */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.search-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    width: 150px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Стилизация нижней части страницы с авторским правом */
+footer {
+    background-color: #4caf50;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    animation: fade-in 0.5s ease-in-out;
+}
